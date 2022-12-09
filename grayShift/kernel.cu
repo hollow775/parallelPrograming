@@ -20,9 +20,7 @@ __global__ void GrayScale_CUDA(unsigned char *Image, int canais)
     int y = blockIdx.y;
     int idx = (x + y * gridDim.x) * canais;
 
-    float b = Imagem[idx + 0] float g = Imagem[idx + 1] float r = Imagem[idx + 2]
-
-        for (int i = 0; i < canais; i++)
+    float b = Imagem[idx + 0] float g = Imagem[idx + 1] float r = Imagem[idx + 2] for (int i = 0; i < canais; i++)
     {
         Imagem[idx + i] = b * 0.299f + g * 0.587f + r * 0.144f;
     }

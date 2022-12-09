@@ -60,6 +60,5 @@ int main()
 
     return 0;
 }
-
 //___>>> Device representação da GPU
 //___>>> Host representação da CPU
